@@ -2,9 +2,9 @@
 #script by jiraphat yuenying for debian8
 #install openvpn
 
-apt-get purge openvpn easy-rsa;
-apt-get purge squid3;
-apt-get purge ufw;
+Y | apt-get purge openvpn easy-rsa;
+Y | apt-get purge squid3;
+Y | apt-get purge ufw;
 apt-get update
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 MYIP2="s/xxxxxxxxx/$MYIP/g";
