@@ -35,6 +35,7 @@ wget -O /etc/openvpn/client.ovpn "https://raw.githubusercontent.com/jiraphaty/ta
 sed -i $MYIP2 /etc/openvpn/client.ovpn;
 cp client.ovpn /root/
 
+N | apt-get install ufw
 ufw allow ssh
 ufw allow 1194/tcp
 ufw allow 8080/tcp
