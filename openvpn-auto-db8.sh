@@ -2,6 +2,9 @@
 #script by jiraphat yuenying for debian8
 #install openvpn
 
+apt-get purge openvpn easy-rsa;
+apt-get purge squid3;
+apt-get purge ufw;
 apt-get update
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 MYIP2="s/xxxxxxxxx/$MYIP/g";
@@ -42,6 +45,14 @@ ufw allow 8080/tcp
 ufw allow 3128/tcp
 ufw allow 80/tcp
 yes | sudo ufw enable
+
+# download script
+cd /usr/bin
+wget -O member "https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/member.sh"
+echo "0 0 * * * root /usr/bin/reboot" > /etc/cron.d/reboot
+echo "* * * * * service dropbear restart" > /etc/cron.d/dropbear
+chmod +x member
+clear
 
 printf '###############################\n'
 printf '# Script by Jiraphat Yuenying #\n'
