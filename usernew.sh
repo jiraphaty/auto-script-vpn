@@ -12,9 +12,9 @@ then
     read -p "Expire : " day
     if [ ! -z "$day" ]
     then
-      echo -e "chage -E $(date -d +30days +%Y-%m-%d) $user"
+      echo -e "chage -E $(date -d +$daydays +%Y-%m-%d) $user\n"
     else
-      echo -e "chage -E $(date -d +$daydays +%Y-%m-%d) $user"
+      echo -e "chage -E $(date -d +30days +%Y-%m-%d) $user\n"
     fi
   else
     echo "Password must not empty"
