@@ -23,7 +23,7 @@ cp ufw /etc/default/
 rm sysctl.conf
 rm before.rules
 rm ufw
-service openvpn restart
+systemctl restart openvpn
 
 #install squid3
 
@@ -31,7 +31,7 @@ apt-get -y install squid;
 cp /etc/squid/squid.conf /etc/squid3/squid.conf.bak
 wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/squid.conf"
 sed -i $MYIP2 /etc/squid/squid.conf;
-service squid restart
+systemctl restart squid
 
 cd /etc/openvpn/
 wget -O /etc/openvpn/client.ovpn "https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/client.ovpn"
