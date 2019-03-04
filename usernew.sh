@@ -4,7 +4,7 @@
 read -p "User : " user
 if [ ! -z "$user" ]
 then
-useradd $user
+  useradd $user
   read -p "Password : " password
   if [ ! -z "$password" ]
   then
@@ -15,9 +15,10 @@ useradd $user
       echo -e "chage -E $(date -d +30days +%Y-%m-%d) $user"
     else
       echo -e "chage -E $(date -d +$daydays +%Y-%m-%d) $user"
+    fi
   else
     echo "Password must not empty"
   fi
 else
-   echo "User must not empty"
+  echo "User must not empty"
 fi
