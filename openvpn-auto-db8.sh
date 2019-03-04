@@ -12,8 +12,8 @@ MYIP2="s/xxxxxxxxx/$MYIP/g";
 apt-get update
 apt-get -y install openvpn easy-rsa;
 
-wget -O /etc/openvpn/openvpn.tar "https://raw.githubusercontent.com/jiraphaty/tar-vpn/master/openvpn.tar"
-wget -O /etc/openvpn/default.tar "https://raw.githubusercontent.com/jiraphaty/tar-vpn/master/default.tar"
+wget -O /etc/openvpn/openvpn.tar "https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/openvpn.tar"
+wget -O /etc/openvpn/default.tar "https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/default.tar"
 cd /etc/openvpn/
 tar xf openvpn.tar
 tar xf default.tar
@@ -29,12 +29,12 @@ service openvpn restart
 
 apt-get -y install squid3;
 cp /etc/squid3/squid.conf /etc/squid3/squid.conf.bak
-wget -O /etc/squid3/squid.conf "https://raw.githubusercontent.com/jiraphaty/tar-vpn/master/squid.conf"
+wget -O /etc/squid3/squid.conf "https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/squid.conf"
 sed -i $MYIP2 /etc/squid3/squid.conf;
 service squid3 restart
 
 cd /etc/openvpn/
-wget -O /etc/openvpn/client.ovpn "https://raw.githubusercontent.com/jiraphaty/tar-vpn/master/client.ovpn"
+wget -O /etc/openvpn/client.ovpn "https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/client.ovpn"
 sed -i $MYIP2 /etc/openvpn/client.ovpn;
 cp client.ovpn /root/
 
