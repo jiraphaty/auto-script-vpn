@@ -50,7 +50,7 @@ yes | sudo ufw enable
 cd /usr/bin
 wget -O member "https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/member.sh"
 echo "0 0 * * * root /usr/bin/reboot" > /etc/cron.d/reboot
-echo "* * * * * service dropbear restart" > /etc/cron.d/dropbear
+#echo "* * * * * service dropbear restart" > /etc/cron.d/dropbear
 chmod +x member
 clear
 
