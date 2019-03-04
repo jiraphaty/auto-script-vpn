@@ -2,9 +2,9 @@
 #script by jiraphat yuenying for debian9
 #install openvpn
 
-Y | apt-get purge openvpn easy-rsa;
-Y | apt-get purge squid;
-Y | apt-get purge ufw;
+apt-get purge openvpn easy-rsa -y;
+apt-get purge squid -y;
+apt-get purge ufw -y;
 apt-get update
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 MYIP2="s/xxxxxxxxx/$MYIP/g";
@@ -38,7 +38,7 @@ wget -O /etc/openvpn/client.ovpn "https://raw.githubusercontent.com/jiraphaty/au
 sed -i $MYIP2 /etc/openvpn/client.ovpn;
 cp client.ovpn /root/
 
-N | apt-get install ufw
+#N | apt-get install ufw
 ufw allow ssh
 ufw allow 1194/tcp
 ufw allow 8080/tcp
