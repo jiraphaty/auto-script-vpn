@@ -33,7 +33,8 @@ cp ufw /etc/default/
 rm sysctl.conf
 rm before.rules
 rm ufw
-systemctl restart openvpn
+sudo systemctl -f enable openvpn@server.service
+sudo systemctl restart openvpn@server.service
 
 #install squid
 
