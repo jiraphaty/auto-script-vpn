@@ -1,5 +1,5 @@
 #!/bin/bash
-#script by jiraphat yuenying for ubuntu 16.04
+#script by jiraphat yuenying for debian8
 #install lamp
 
 printf 'Set your Database password: '
