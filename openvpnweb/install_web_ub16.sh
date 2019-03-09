@@ -6,7 +6,6 @@ printf 'Set your Database password: '
 read password
 
 #service apache2 stop
-
 #apt-get purge apache2 apache2-utils apache2.2-bin apache2-common
 apt-get remove --purge mysql-server php-mysql -y
 apt-get autoremove --purge -y
