@@ -41,7 +41,7 @@ service apache2 restart
 rm -Rf /var/www/html
 mkdir /var/www/html
 
-wget -O /var/www/html/htdocs.tar 'https://github.com/jiraphaty/auto-script-vpn/raw/master/openvpnweb/htdocs_openvpn.tar'
+wget -O /var/www/html/htdocs.tar 'https://github.com/jiraphaty/auto-script-vpn/raw/master/openvpnweb/htdocs_openvpn_final.tar'
 
 cd /var/www/html/
 
