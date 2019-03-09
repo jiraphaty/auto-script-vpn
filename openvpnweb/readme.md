@@ -2,7 +2,7 @@
 
 <p>วิธีติดตั้ง</p>
 <p>รันคำสั่งตามนี้</p>
-<div style="margin-left:50px">
+<div style="margin-left:150px">
     <ul>
         <li>wget https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/openvpnweb/install_web.sh</li>
         <li>chmod +x install_web.sh</li>
