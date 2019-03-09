@@ -11,3 +11,13 @@
 </div>
 <p>เข้าเว็บตามไอพีโฮสของคุณ เช่น 192.168.1.1/install </p>
 <h1>สคริปของระบบต่าง ๆ</h1>
+ <ul>
+        <li>
+            Xampp บนวินโด้ว ติดตั้งผ่าน Powershell
+            <ul>
+                <li>https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/openvpnweb/install_web_window.ps1</li>
+            </ul>
+        </li>
+        <li></li>
+        <li></li>
+    </ul>
