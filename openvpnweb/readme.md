@@ -1,2 +1,1 @@
-Script by Jiraphat Yuenying
-<h1>asdas</h1>
+<h1>Script by Jiraphat Yuenying</h1>
