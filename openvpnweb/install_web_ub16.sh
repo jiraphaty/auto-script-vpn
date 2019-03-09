@@ -8,7 +8,7 @@ read password
 #service apache2 stop
 
 #apt-get purge apache2 apache2-utils apache2.2-bin apache2-common
-apt-get remove --purge mysql-server php5-mysql -y
+apt-get remove --purge mysql-server php-mysql -y
 apt-get autoremove --purge -y
 apt-get autoclean
 #rm rm -Rf /etc/apache2 /usr/lib/apache2 /usr/include/apache2
@@ -24,8 +24,8 @@ apt-get install apache2 -y
 #export DEBIAN_FRONTEND=noninteractive
 #apt-get install mysql-server php-mysql -q -y
 #mysqladmin -u root password $password
-sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password $password'
-sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password $password'
+sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password '$password
+sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password '$password
 sudo apt-get -y install mysql-server
 
 #install php
