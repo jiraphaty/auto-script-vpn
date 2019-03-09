@@ -20,12 +20,11 @@ apt-get update
 apt-get install apache2 -y
 
 #install mysql
-#export DEBIAN_FRONTEND=noninteractive
-#apt-get install mysql-server php-mysql -q -y
-#mysqladmin -u root password $password
-sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password '$password
-sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password '$password
-sudo apt-get -y install mysql-server
+export DEBIAN_FRONTEND="noninteractive"
+sudo debconf-set-selections <<< "mariadb-server mysql-server/root_password password "$password
+sudo debconf-set-selections <<< "mariadb-server mysql-server/root_password_again password "$password 
+
+sudo apt-get install -y mariadb-server python-mysqldb
 
 #install php
 apt-get install php libapache2-mod-php php-mcrypt php-mysql -y
