@@ -22,11 +22,11 @@ apt-get install apache2 -y
 
 #install mysql
 export DEBIAN_FRONTEND=noninteractive
-apt-get install mysql-server php5-mysql -q -y
+apt-get install mysql-server -q -y
 mysqladmin -u root password $password
 
 #install php
-apt-get install php5 libapache2-mod-php5 php5-mcrypt -y
+apt-get install php libapache2-mod-php php-mcrypt php-mysql -y
 systemctl restart apache2
 
 wget -O /etc/apache2/mods-enabled/dir.conf 'https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/openvpnweb/dir.conf'
