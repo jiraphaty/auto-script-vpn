@@ -18,6 +18,28 @@
                 <li>https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/openvpnweb/install_web_window.ps1</li>
             </ul>
         </li>
-        <li></li>
-        <li></li>
+        <li>
+            Debian 8
+            <ul>
+                <li>https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/openvpnweb/install_web_db8.sh</li>
+            </ul>
+        </li>
+        <li> 
+            Debian 9
+            <ul>
+                <li>https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/openvpnweb/install_web_db9.sh</li>
+            </ul>
+        </li>
+         <li> 
+           Ubuntu 14
+            <ul>
+                <li>https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/openvpnweb/install_web_ub14.sh</li>
+            </ul>
+        </li>
+        <li> 
+           Ubuntu 16
+            <ul>
+                <li>https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/openvpnweb/install_web_ub16.sh</li>
+            </ul>
+        </li>
     </ul>
