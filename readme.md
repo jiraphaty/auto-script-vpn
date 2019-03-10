@@ -9,3 +9,4 @@
         <li>reboot หนึ่งรอบ</li>
     </ul>
 </div>
+<h2>สคริปท์ติดตั้ง เว็บสมัคร https://github.com/jiraphaty/auto-script-vpn/blob/master/openvpnweb/ /h2>
