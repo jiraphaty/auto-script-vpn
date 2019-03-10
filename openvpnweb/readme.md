@@ -43,3 +43,4 @@
             </ul>
         </li>
     </ul>
+<h2>สคริปท์ติดตั้ง openvpn https://github.com/jiraphaty/auto-script-vpn</h2>
