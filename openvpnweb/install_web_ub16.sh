@@ -14,6 +14,7 @@ apt-get autoclean
 rm -rf /etc/mysql
 find / -iname 'mysql*' -exec rm -rf {} \;
 
+timedatectl set-timezone Asia/Bangkok
 apt-get update
 apt-get install bc -y
 
