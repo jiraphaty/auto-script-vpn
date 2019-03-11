@@ -15,7 +15,7 @@ rm -rf /etc/mysql
 find / -iname 'mysql*' -exec rm -rf {} \;
 
 apt-get update
-apt-get install bc
+apt-get install bc -y
 
 #install apeche2
 apt-get install apache2 -y
