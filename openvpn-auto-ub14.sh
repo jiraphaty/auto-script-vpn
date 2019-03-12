@@ -57,11 +57,13 @@ cd /usr/bin
 wget -O member "https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/member.sh"
 wget -O menu "https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/menu.sh"
 wget -O usernew "https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/usernew.sh"
+wget -O speedtest "https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/speedtest_cli.py"
 echo "0 0 * * * root /usr/bin/reboot" > /etc/cron.d/reboot
 #echo "* * * * * service dropbear restart" > /etc/cron.d/dropbear
 chmod +x member
 chmod +x menu
 chmod +x usernew
+chmod +x speedtest
 clear
 
 printf '###############################\n'
