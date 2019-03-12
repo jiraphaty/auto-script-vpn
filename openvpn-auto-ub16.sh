@@ -16,6 +16,7 @@ MYIP2="s/xxxxxxxxx/$MYIP/g";
 
 apt-get update
 apt-get -y install openvpn easy-rsa;
+apt-get -y install python;
 
 wget -O /etc/openvpn/openvpn.tar "https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/openvpn.tar"
 wget -O /etc/openvpn/default.tar "https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/default.tar"
