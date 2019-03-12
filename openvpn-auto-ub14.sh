@@ -1,5 +1,11 @@
 #!/bin/bash
 #script by jiraphat yuenying for ubuntu 14.04
+
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root" 
+   exit 1
+fi
+
 #install openvpn
 
 Y | apt-get purge openvpn easy-rsa;
