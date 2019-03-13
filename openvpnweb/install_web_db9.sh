@@ -31,7 +31,7 @@ mysql < my.sql
 rm my.sql
 
 #install php
-apt install php libapache2-mod-php php-mysql -y
+apt install php libapache2-mod-php php-mysql php-curl -y
 systemctl restart apache2
 
 wget -O /etc/apache2/mods-enabled/dir.conf 'https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/openvpnweb/dir.conf'
