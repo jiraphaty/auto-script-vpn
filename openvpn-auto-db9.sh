@@ -16,6 +16,7 @@ MYIP=$(wget -qO- ipv4.icanhazip.com);
 MYIP2="s/xxxxxxxxx/$MYIP/g";
 
 apt-get update
+apt-get install bc -y
 apt-get -y install openvpn easy-rsa;
 apt-get -y install python;
 
