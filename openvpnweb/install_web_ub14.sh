@@ -30,7 +30,7 @@ apt-get install mysql-server php5-mysql -q -y
 mysqladmin -u root password $password
 
 #install php
-apt-get install php5 libapache2-mod-php5 php5-mcrypt -y
+apt-get install php5 libapache2-mod-php5 php5-mcrypt php5-curl -y
 service apache2 restart
 
 wget -O /etc/apache2/mods-enabled/dir.conf 'https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/openvpnweb/dir.conf'
