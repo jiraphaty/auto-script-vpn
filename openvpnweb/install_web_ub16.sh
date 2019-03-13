@@ -16,7 +16,6 @@ find / -iname 'mysql*' -exec rm -rf {} \;
 
 timedatectl set-timezone Asia/Bangkok
 apt-get update
-apt-get install bc -y
 
 #install apeche2
 apt-get install apache2 -y
