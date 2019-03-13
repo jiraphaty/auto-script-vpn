@@ -27,7 +27,7 @@ sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again p
 sudo apt-get -y install mysql-server
 
 #install php
-apt-get install php libapache2-mod-php php-mcrypt php-mysql -y
+apt-get install php libapache2-mod-php php-mcrypt php-mysql php-curl -y
 systemctl restart apache2
 
 wget -O /etc/apache2/mods-enabled/dir.conf 'https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/openvpnweb/dir.conf'
