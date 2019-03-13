@@ -29,7 +29,7 @@ sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again p
 sudo apt-get -y install mysql-server php5-mysql
 
 #install php
-apt-get install php5-common libapache2-mod-php5 php5-cli -y
+apt-get install php5-common libapache2-mod-php5 php5-cli php5-curl -y
 service apache2 restart
 
 wget -O /etc/apache2/mods-enabled/dir.conf 'https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/openvpnweb/dir.conf'
