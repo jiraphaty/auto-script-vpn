@@ -58,7 +58,7 @@ wget -O member "https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/mast
 wget -O menu "https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/menu.sh"
 wget -O usernew "https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/usernew.sh"
 wget -O speedtest "https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/speedtest_cli.py"
-wget -O userdel "https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/deluser.sh"
+wget -O userd "https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/deluser.sh"
 wget -O trial "https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/trial.sh"
 echo "0 0 * * * root /usr/bin/reboot" > /etc/cron.d/reboot
 #echo "* * * * * service dropbear restart" > /etc/cron.d/dropbear
@@ -66,7 +66,7 @@ chmod +x member
 chmod +x menu
 chmod +x usernew
 chmod +x speedtest
-chmod +x userdel
+chmod +x userd
 chmod +x trial
 clear
 
