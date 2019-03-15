@@ -22,5 +22,14 @@
     <li>Ctrl + X</li>
     <li>Y</li>
     <li>service restart ssh (ใช้คำสั่งรีสตาร์ท ตามระบบ)</li>
+    <li>ตั้งพาสโดยใช้คำสั่ง passwd root</li>
 </ul>
 หรือ
+<ul>
+    <li>ใช้ auto-script รันสคริปต์ตามนี้ (เลือกตามระบบ)</li>
+    <li>ตัวอย่าง ระบบ Ubuntu 14.04 </li>
+    <li>wget https://raw.githubusercontent.com/jiraphaty/auto-script-vpn/master/ssh_ub14.sh</li>
+    <li>chmod +x ssh_ub14.sh</li>
+    <li>./ssh_ub14.sh</li>
+    <li>ตั้งพาสโดยใช้คำสั่ง passwd root</li>
+</ul>
