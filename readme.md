@@ -16,7 +16,7 @@
     <li>ล็อกอินเข้าเครื่อง vps ด้วยรหัสที่คุณมี</li>
     <li>ทำตามขั้นตอน</li>
     <li>sudo -i</li>
-    <linano /etc/ssh/sshd_config</li>
+    <li>nano /etc/ssh/sshd_config</li>
     <li>หาบรรทัด PermitRootLogin no เปลี่ยนเป็น PermitRootLogin yes</li>
     <li>หาบรรทัด PasswordAuthentication no เปลี่ยนเป็น PasswordAuthentication yes</li>
     <li>Ctrl + X</li>
